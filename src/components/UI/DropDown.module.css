@@ -1,0 +1,23 @@
+.dropdown{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 2rem;
+    padding: 2rem;
+}
+
+.dropdown label{
+    font-size: 1rem;;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.dropdown select{
+    width: 15rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-indent: 10px;
+}

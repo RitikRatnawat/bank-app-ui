@@ -1,0 +1,53 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 60vw;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 3px 10px #ccc;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    line-height: 3rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px #ccc;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 15rem;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    height: 7rem;
+}
+
+.submit{
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #6157ff, #ee49fd);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: space-around;
+    width: 20%;
+}
