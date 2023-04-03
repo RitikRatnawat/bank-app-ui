@@ -96,7 +96,7 @@ const RegistrationForm = (props) => {
         }
 
         register({
-            url: "http://127.0.0.1:8000/my-bank/account/new/",
+            url: "http://3.109.158.42/my-bank/account/new/",
             method: "POST",
             body: registrationData,
             headers: {
@@ -167,7 +167,7 @@ const RegistrationForm = (props) => {
             <h1 className={classes.heading}>
                 {`${!isRegistered ? "Create New Bank Account" : "Account Registered"}`}
             </h1>
-            {!isRegistered && !error && formModal}
+            {!isRegistered && !error && !isLoading && formModal}
             {detailsModal}
         </React.Fragment>
     )

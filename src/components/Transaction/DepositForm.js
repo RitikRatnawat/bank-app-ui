@@ -21,7 +21,7 @@ const DepositForm = (props) => {
         const token = sessionStorage.getItem("token")
 
         deposit({
-            url: "http://127.0.0.1:8000/my-bank/account/deposit/" + user_id,
+            url: "http://3.109.158.42/my-bank/account/deposit/" + user_id,
             method: "PUT",
             body: depositData,
             headers: {

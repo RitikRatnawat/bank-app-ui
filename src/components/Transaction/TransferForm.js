@@ -24,7 +24,7 @@ const TransferForm = (props) => {
         const token = sessionStorage.getItem("token")
 
         transfer({
-            url: "http://127.0.0.1:8000/my-bank/account/transfer/" + user_id,
+            url: "http://3.109.158.42/my-bank/account/transfer/" + user_id,
             method: "PUT",
             body: transferData,
             headers: {

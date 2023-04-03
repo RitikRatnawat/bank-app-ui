@@ -15,7 +15,6 @@ const LoginForm = (props) => {
     const saveData = (data) => {
         console.log(data)
         sessionStorage.setItem("token", data['token'])
-        sessionStorage.setItem("user_id", usernameRef.current.value)
         setLoggedIn(true)
     }
 
@@ -29,9 +28,10 @@ const LoginForm = (props) => {
             password: passwordRef.current.value
         }
         console.log(loginData)
+        sessionStorage.setItem("user_id", usernameRef.current.value)
 
         login({
-            url: "http://127.0.0.1:8000/my-bank/account/login/",
+            url: "http://3.109.158.42/my-bank/account/login/",
             method: "POST",
             body: loginData,
             headers: {
@@ -66,12 +66,14 @@ const LoginForm = (props) => {
             </div>
         )
 
-    if (error)
+    if (error){
+        sessionStorage.removeItem('user_id')
         detailsModal = (
             <div className={classes.form}>
                 <p>{error}</p>
             </div>
         )
+    }
 
     return (
         <React.Fragment>
